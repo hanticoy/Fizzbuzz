@@ -18,10 +18,40 @@
             Todos los demás números deberían imprimirse de forma normal</h4>
 
         <script lang="javascript">
+            // function llamarFizzbuzz() {
+
+            //     let noimprime = 0;
+            //     for (var i = 1; i <= 100; i++) {
+            //         if (i % 3 == 0) {
+            //             console.log('i=' + i + ' es multiplo (3):Fizz');
+            //             document.write('i=' +i + " es multiplo (3):Fizz<br>")
+            //             noimprime = 1;
+            //         }
+            //         if (i % 5 == 0) {
+            //             console.log('i=' + i + ' es multiplo (5):Buzz');
+            //             document.write('i=' + i + ' es multiplo (5):Buzz<br>')
+            //             noimprime = 1;
+            //         }
+            //         if ((i % 3 == 0) && (i % 5 == 0)) {
+            //             console.log('i=' + i + ' es multiplo (3 y 5):FizzBuzz');
+            //             document.write('i=' + i  + ' es multiplo (3 y 5):FizzBuzz<br>')
+            //             noimprime = 1;
+            //         }
+
+            //         if (noimprime == 0) {
+            //             console.log('i=' + i + ' NO es multiplo ()');
+            //         }
+
+            //         noimprime = 0
+            //     }
+
+            // }
+            // llamarFizzbuzz();
             function llamarFizzbuzz() {
 
                 let noimprime = 0;
                 for (var i = 1; i <= 100; i++) {
+                    
                     if (i % 3 == 0) {
                         console.log('Fizz');
                         document.write("Fizz<br>")
@@ -37,15 +67,18 @@
                         document.write("FizzBuzz<br>")
                         noimprime = 1;
                     }
+                    
                     if (noimprime == 0) {
                         console.log(i);
+                        document.write(i + '<br>')
                     }
+
                     noimprime = 0
+                   
                 }
 
             }
             llamarFizzbuzz();
-
         </script>
 
         <h6>Pdta: los valores son impresos en la pagina web y en la consola (para ver presionar F12)</h6>

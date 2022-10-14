@@ -1,4 +1,4 @@
-var noimprime = 0;
+let noimprime = 0;
 for (var i = 1; i <= 100; i++) {
     if (i % 3 == 0) {
         console.log('Fizz');

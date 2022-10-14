@@ -20,25 +20,32 @@
         <script lang="javascript">
             function llamarFizzbuzz() {
 
+                let noimprime = 0;
                 for (var i = 1; i <= 100; i++) {
                     if (i % 3 == 0) {
                         console.log('Fizz');
                         document.write("Fizz<br>")
+                        noimprime = 1;
                     }
                     if (i % 5 == 0) {
                         console.log('Buzz');
                         document.write("Buzz<br>")
+                        noimprime = 1;
                     }
                     if ((i % 3 == 0) && (i % 5 == 0)) {
                         console.log('FizzBuzz');
                         document.write("FizzBuzz<br>")
+                        noimprime = 1;
                     }
-                    console.log(i);
-                    document.write(i + '<br>')
-
+                    if (noimprime == 0) {
+                        console.log(i);
+                    }
+                    noimprime = 0
                 }
+
             }
             llamarFizzbuzz();
+
         </script>
 
         <h6>Pdta: los valores son impresos en la pagina web y en la consola (para ver presionar F12)</h6>

@@ -1,37 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio JS Fizzbuzz</title>
-</head>
-
 <body>
-    <script lang="javascript">
-        function llamarFizzbuzz() {
+    <!DOCTYPE html>
+    <html lang="en">
 
-            for (var i = 1; i <= 100; i++) {
-                if (i % 3 == 0) {
-                    console.log('Fizz');
-                    document.write("Fizz<br>")
-                }
-                if (i % 5 == 0) {
-                    console.log('Buzz');
-                    document.write("Buzz<br>")
-                }
-                if ((i % 3 == 0) && (i % 5 == 0)) {
-                    console.log('FizzBuzz');
-                    document.write("FizzBuzz<br>")
-                }
-                console.log(i);
-                document.write(i + '<br>')
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Bucles Fizzbuzz </title>
+    </head>
 
+    <body>
+        <h1>Fizzbuzz</h1>
+        <h4>Escribe un código que pase por cada número del 1 al 100 y: <br>
+            Para cada número que sea múltiplo de 3 , imprima "Fizz" <br>
+            Para cada número que sea múltiplo de 5 , imprima "Buzz" <br>
+            Para los números que son múltiplos de 3 y 5, imprima "FizzBuzz" <br>
+            Todos los demás números deberían imprimirse de forma normal</h4>
+
+        <script lang="javascript">
+            function llamarFizzbuzz() {
+
+                for (var i = 1; i <= 100; i++) {
+                    if (i % 3 == 0) {
+                        console.log('Fizz');
+                        document.write("Fizz<br>")
+                    }
+                    if (i % 5 == 0) {
+                        console.log('Buzz');
+                        document.write("Buzz<br>")
+                    }
+                    if ((i % 3 == 0) && (i % 5 == 0)) {
+                        console.log('FizzBuzz');
+                        document.write("FizzBuzz<br>")
+                    }
+                    console.log(i);
+                    document.write(i + '<br>')
+
+                }
             }
-        }
-        llamarFizzbuzz();
-    </script>
-</body>
+            llamarFizzbuzz();
+        </script>
 
-</html>
+        <h6>Pdta: los valores son impresos en la pagina web y en la consola (para ver presionar F12)</h6>
+
+
+    </body>
+
+    </html>
